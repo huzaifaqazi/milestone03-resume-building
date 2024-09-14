@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Resume building project </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Dynamic resume building project by HUZAIFA ASHFAQ</h1>
+    <form id="resume form">
+        <fieldset>
+            <legend>personal information</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" placeholder="enter your name"  id="name" name="name" required>
+            
+            <br><br>
+             <label for="Fathername">Father name:</label>
+            <input type="text" placeholder="enter your f.name"  id="fathername" name="fathername" required>
+            
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="enter your valid e.mail"  id="email" name="email" required>
+            
+            <br><br>
+            <label for="phone">contact no:</label>
+            <input type="number" placeholder="phone number"  id="phone" name="phone" required>
+            
+            <br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>education</legend>
+            <label for="education">education:</label>
+            <textarea id="education" name="education" rows="4"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>skills</legend>
+            <label for="skills">skills:</label>
+            <textarea id="skills" name="skills" rows="4"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>experience</legend>
+            <label for="experience">experience:</label>
+            <textarea id="experience" name="experience" rows="4"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">
+            generate resume
+        </button>
+    </form>
+    <div id="resumeoutput" contenteditable="true">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
